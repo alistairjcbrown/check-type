@@ -1,0 +1,40 @@
+{
+  "name": "check-type",
+  "version": "0.1.0",
+  "author": "Alistair Brown <github@alistairjcbrown.com>",
+  "description": "Library to check variable type and properties in object.",
+  "homepage": "https://github.com/alistairjcbrown/check-type",
+  "main": "./lib/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alistairjcbrown/check-type.git"
+  },
+  "keywords": [
+    "util",
+    "type",
+    "check",
+    "checking",
+    "library"
+  ],
+  "bugs": "https://github.com/alistairjcbrown/check-type/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/alistairjcbrown/check-type/master/LICENSE"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "underscore": "latest",
+    "chai": "latest",
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-mocha-test": "latest",
+    "mocha": "latest",
+    "sinon": "latest",
+    "sinon-chai": "latest"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
