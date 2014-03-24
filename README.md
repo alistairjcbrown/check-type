@@ -58,7 +58,7 @@ check.init(custom_functions);
 
 ## Clear
 
-This clears the internal type checking mapping.
+This clears all of the internal stored type checking functions.
 
 ```js
 check.clear();
