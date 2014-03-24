@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         "all": js_files,
         "options": {
             "curly":      true,
-            "devel":      true,
+            "devel":      false,
             "eqeqeq":     true,
             "eqnull":     true,
             "expr":       true,
