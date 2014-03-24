@@ -4,7 +4,7 @@
   "author": "Alistair Brown <github@alistairjcbrown.com>",
   "description": "Library to check variable type and properties in object.",
   "homepage": "https://github.com/alistairjcbrown/check-type",
-  "main": "./lib/",
+  "main": "./lib/main",
   "repository": {
     "type": "git",
     "url": "git://github.com/alistairjcbrown/check-type.git"
