@@ -2,28 +2,71 @@
 
 A type checking framework for Javascript.
 
-## Using
 
-### NodeJs
+---
 
-Module can be installed using `npm`.
 
-```
-npm install check-type
-```
+## Dependency
 
-### RequireJs
-
-Instructions coming soon...
-
-### Browser
-
-Instructions coming soon...
-
+This module relies on [Underscore.js](http://underscorejs.org/).
 
 
 ---
 
+
+
+
+## Environments
+
+### NodeJs
+
+```sh
+npm install check-type
+```
+
+### Browser
+
+```sh
+wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/lib/check-type.js
+```
+
+
+
+## Use
+
+### NodeJs
+
+```js
+var check = require("check-type").init();
+```
+
+The module can be required using NodeJS built in `require` ([See example](lib/examples/nodejs)).
+
+
+### Browser
+
+```html
+<script src="/path/to/check-type"></script>
+<script>
+    check.init();
+</script>
+```
+
+The module can be used in the browser through the `<script>` tag and will bind to `window` ([See example](lib/examples/browser)).
+
+
+### RequireJS
+
+The module supports the AMD format and uses `define` if available. Therefore it can be used as a RequireJS module ([See Browser example](lib/examples/requirejs/browser), [See NodeJS example](lib/examples/requirejs/nodejs)).
+
+```js
+define([ "check-type" ], function(check) {
+    check.init();
+});
+```
+
+
+---
 
 
 ## Testing
@@ -36,9 +79,7 @@ grunt go     # call go task to lint and test
 ```
 
 
-
 ---
-
 
 
 ## Init
@@ -60,14 +101,14 @@ var check = require("check-type").init();
 
 ```js
 var check = require("check-type"),
-	custom_functions = {
-		"isEmail": function(value) {
-			return value.indexOf("@") !== -1
-		},
-		"isEmpty": function(value) {
-			return value === "empty";
-		}
-	},
+    custom_functions = {
+        "isEmail": function(value) {
+            return value.indexOf("@") !== -1
+        },
+        "isEmpty": function(value) {
+            return value === "empty";
+        }
+    },
 
 // Initialise check with underscore type checking functions
 //  and custom checking functions, overriding underscore's isEmpty function
@@ -86,6 +127,7 @@ check.clear();
 
 ---
 
+
 ## Type checking
 
 Once the `check` function has been initialised, it can utilise any defined type checking functions.
@@ -99,10 +141,12 @@ check.init();
 check(my_string).is("string"); // true
 check(my_string).is("number"); // false
 
-check(my_string).is("foo");    // throws Error
+check(my_string).is("foo");    // throws Error for unsupported type
 ```
 
+
 ---
+
 
 ## Object path checking
 
@@ -112,16 +156,18 @@ check(my_string).is("foo");    // throws Error
 
 ```js
 var my_object = {
-	hello: {
-		world: false
-	}
+    hello: {
+        world: false
+    }
 };
 
 check(my_object).has("hello.world"); // true
-check(my_object).has("foo.bar");    // false
+check(my_object).has("foo.bar");     // false
 ```
 
+
 ---
+
 
 ## Combining type checking and object paths
 
@@ -131,13 +177,13 @@ Type checking and value presence in an object can be used in combination, for ex
 
 ```js
 var my_object = {
-	hello: {
-		world: "test"
-	}
+    hello: {
+        world: "test"
+    }
 };
 
 if (check(my_object).has("hello.world") &&
-	check(my_object.hello.world).is("string")) {
-	// Success
+    check(my_object.hello.world).is("string")) {
+    // Success
 }
 ```

@@ -15,12 +15,14 @@ module.exports = function(grunt) {
             "./*.js",
             "./**/*.js",
             "!./node_modules/**/*.js",
+            "!./**/node_modules/**/*.js",
             "!./.git/"
         ],
         test_files = [
             "./*.test.js",
             "./**/*.test.js",
             "!./node_modules/**/*.test.js",
+            "!./**/node_modules/**/*.test.js",
             "!./.git/"
         ],
         jshint, mocha;
@@ -50,15 +52,16 @@ module.exports = function(grunt) {
             "undef":      true,
             "unused":     true,
             "globals": {
-                "_":        true,
-                "define":   true,
-                "module":   true,
-                "require":  true,
-                "suite":    true,
-                "test":     true,
-                "setup":    true,
-                "teardown": true,
-                "window":   true
+                "_":         true,
+                "define":    true,
+                "module":    true,
+                "require":   true,
+                "suite":     true,
+                "test":      true,
+                "setup":     true,
+                "teardown":  true,
+                "window":    true,
+                "__dirname": true
             }
         }
     },

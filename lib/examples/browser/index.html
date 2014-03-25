@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Browser Example</title>
+    </head>
+    <body>
+        <p>
+            Browser Example for
+            <a href="../../../">
+                check-type
+            </a>
+        </p>
+        <p>
+            Please view developer console / source.
+        </p>
+
+        <script src="../../../node_modules/underscore/underscore.js"></script>
+        <script src="../../check-type.js"></script>
+        <script>
+            (function() {
+                var is_check_function;
+
+                check.init();
+
+                is_check_function = check(check).is("function");
+                console.log("Is check function available?", is_check_function);
+            })();
+        </script>
+    </body>
+</html>

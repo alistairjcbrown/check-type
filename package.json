@@ -1,6 +1,6 @@
 {
   "name": "check-type",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Alistair Brown <github@alistairjcbrown.com>",
   "description": "Library to check variable type and properties in object.",
   "homepage": "https://github.com/alistairjcbrown/check-type",
