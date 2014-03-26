@@ -1,6 +1,6 @@
 {
   "name": "check-type",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "Alistair Brown <github@alistairjcbrown.com>",
   "description": "Library to check variable type and properties in object.",
   "homepage": "https://github.com/alistairjcbrown/check-type",
@@ -30,6 +30,7 @@
     "chai": "latest",
     "grunt": "latest",
     "grunt-contrib-jshint": "latest",
+    "grunt-mocha": "latest",
     "grunt-mocha-test": "latest",
     "mocha": "latest",
     "sinon": "latest",

@@ -16,15 +16,28 @@ This module relies on [Underscore.js](http://underscorejs.org/).
 
 
 
-## Environments
+## Installation
 
 ### NodeJs
+
+In a node environment, simply install [using npm](https://www.npmjs.org/).
 
 ```sh
 npm install check-type
 ```
 
+### Bower
+
+For front-end package management, you can install [using Bower](http://bower.io/).
+
+```sh
+bower install check-type
+```
+
 ### Browser
+
+For manual management, you can grab the Javascript file directly.
+You will need to grab `underscore.js` as well.
 
 ```sh
 wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/lib/check-type.js
@@ -46,7 +59,8 @@ The module can be required using NodeJS built in `require` ([See example](lib/ex
 ### Browser
 
 ```html
-<script src="/path/to/check-type"></script>
+<script src="/path/to/underscore"></script>
+<script src="/path/to/check-type/lib/check-type.js"></script>
 <script>
     check.init();
 </script>
@@ -71,11 +85,36 @@ define([ "check-type" ], function(check) {
 
 ## Testing
 
-Built in tests and linting using [Grunt](http://gruntjs.com/) using [JSHint](http://www.jshint.com/about/) and [Mocha](http://visionmedia.github.io/mocha/).
+Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](http://www.jshint.com/about/) and [Mocha](http://visionmedia.github.io/mocha/).
+
+### Test in Nodejs
 
 ```sh
-npm install  # install dev dependencies
-grunt go     # call go task to lint and test
+npm install           # install dev dependencies for running on nodejs
+grunt test --nodejs   # Run test in nodejs
+```
+
+### Test in Browser
+
+```sh
+bower install         # install dev dependencies for running in browser
+# Open lib/test/check-type.test.html in browser
+```
+
+### Test in Browser under PhantomJS
+
+```sh
+npm install           # install dev dependencies for running on nodejs
+bower install         # install dev dependencies for running in browser
+grunt test --browser  # Run test in phantomjs
+```
+
+### Test All
+
+```sh
+npm install           # install dev dependencies for running on nodejs
+bower install         # install dev dependencies for running in browser
+grunt test            # Run tests
 ```
 
 
@@ -130,7 +169,7 @@ check.clear();
 
 ## Type checking
 
-Once the `check` function has been initialised, it can utilise any defined type checking functions.
+Once the `check` function has been initialised, it can utilise any defined type checking functions using `is`.
 
 ### Example: Checking for string using `is`
 
@@ -144,6 +183,19 @@ check(my_string).is("number"); // false
 check(my_string).is("foo");    // throws Error for unsupported type
 ```
 
+You can also negate the check with `is.not`
+
+### Example: Checking for string using `is.not`
+
+```js
+var my_string = "hello world";
+check.init();
+
+check(my_string).is.not("string"); // false
+check(my_string).is.not("number"); // true
+
+check(my_string).is.not("foo");    // throws Error for unsupported type
+```
 
 ---
 

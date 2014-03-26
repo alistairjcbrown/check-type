@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     "use strict";
 
     // Expressions for matching files
-    var js_files   = [
+    var js_files = [
             "./*.js",
             "./**/*.js",
             "!./node_modules/**/*.js",
@@ -25,7 +25,15 @@ module.exports = function(grunt) {
             "!./**/node_modules/**/*.test.js",
             "!./.git/"
         ],
-        jshint, mocha;
+        test_pages = [
+            "./*.test.html",
+            "./**/*.test.html",
+            "!./node_modules/**/*.test.html",
+            "!./**/node_modules/**/*.test.html",
+            "!./.git/"
+        ],
+        mocha_task = [ "mochaTest", "mocha" ],
+        jshint, mocha_nodejs, mocha_browser;
 
     // ------
 
@@ -65,13 +73,25 @@ module.exports = function(grunt) {
             }
         }
     },
-    mocha = { /* Runs mocha tests */
+    // Run mocha tests in node
+    mocha_nodejs = {
         "test": {
             "src": test_files,
             "options": {
                 "reporter": "spec",
-                "log":      true,
                 "ui":       "tdd"
+            }
+        }
+    },
+    // Run mocha tests in browser
+    mocha_browser = {
+        "test": {
+            "src": test_pages,
+            "options": {
+                "reporter": "Spec",
+                "log":      true,
+                "ui":       "tdd",
+                "run":      true
             }
         }
     };
@@ -79,18 +99,30 @@ module.exports = function(grunt) {
     grunt.initConfig({
         "pkg":       grunt.file.readJSON("package.json"),
         "jshint":    jshint,
-        "mochaTest": mocha
+        "mochaTest": mocha_nodejs,
+        "mocha":     mocha_browser
     });
 
     // Load Tasks
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-mocha-test");
+    grunt.loadNpmTasks("grunt-mocha");
+
+
+    // Allow parameter after test
+    if (process.argv[2] === "test") {
+        if (grunt.option("nodejs")) {
+            mocha_task = [ mocha_task[0] ];
+        } else if (grunt.option("browser")) {
+            mocha_task = [ mocha_task[1] ];
+        }
+    }
 
     // Define tasks
-    grunt.registerTask("hint",    [ "jshint" ]);
-    grunt.registerTask("test",    [ "mochaTest" ]);
-    grunt.registerTask("go",      [ "hint", "test" ]);
-    grunt.registerTask("default", [ "go" ]);
+    grunt.registerTask("hint",         [ "jshint" ]);
+    grunt.registerTask("test",         mocha_task);
+    grunt.registerTask("go",           [ "hint", "test" ]);
+    grunt.registerTask("default",      [ "go" ]);
 
 };
 
