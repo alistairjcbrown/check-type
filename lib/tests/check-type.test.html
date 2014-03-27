@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Check-Type Browser Tests</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../node_modules/mocha/mocha.css">
+    </head>
+
+    <body>
+        <div id="mocha"></div>
+
+        <script src="../../bower_components/underscore/underscore.js"></script>
+        <script src="../../bower_components/mocha/mocha.js"></script>
+        <script src="../../bower_components/chai/chai.js"></script>
+        <script src="../../bower_components/sinonjs-built/pkg/sinon.js"></script>
+        <script src="../../bower_components/sinon-chai/lib/sinon-chai.js"></script>
+        <script src="../../lib/check-type.js"></script>
+        <script>
+            mocha.setup('tdd');
+        </script>
+        <script src="../../lib/tests/check-type.test.js"></script>
+        <script>
+            // https://github.com/kmiyashiro/grunt-mocha#optionsrun
+            if (navigator.userAgent.indexOf('PhantomJS') === -1) {
+                mocha.run();
+            }
+        </script>
+    </body>
+</html>
