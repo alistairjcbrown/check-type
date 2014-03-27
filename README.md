@@ -20,17 +20,21 @@ This module relies on [Underscore.js](http://underscorejs.org/).
 
 ### NodeJs
 
+`check-type` is available through the [npm package repository](https://npmjs.org/package/check-type).
+
 In a node environment, simply install [using npm](https://www.npmjs.org/).
 
-```sh
+```
 npm install check-type
 ```
 
 ### Bower
 
+`check-type` is available through the [bower package repository](http://bower.io/search/?q=check-type).
+
 For front-end package management, you can install [using Bower](http://bower.io/).
 
-```sh
+```
 bower install check-type
 ```
 
@@ -39,7 +43,7 @@ bower install check-type
 For manual management, you can grab the Javascript file directly.
 You will need to grab `underscore.js` as well.
 
-```sh
+```
 wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/lib/check-type.js
 ```
 
@@ -89,21 +93,21 @@ Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](h
 
 ### Test in Nodejs
 
-```sh
+```
 npm install           # install dev dependencies for running on nodejs
 grunt test --nodejs   # Run test in nodejs
 ```
 
 ### Test in Browser
 
-```sh
+```
 bower install         # install dev dependencies for running in browser
 # Open lib/test/check-type.test.html in browser
 ```
 
 ### Test in Browser under PhantomJS
 
-```sh
+```
 npm install           # install dev dependencies for running on nodejs
 bower install         # install dev dependencies for running in browser
 grunt test --browser  # Run test in phantomjs
@@ -111,7 +115,7 @@ grunt test --browser  # Run test in phantomjs
 
 ### Test All
 
-```sh
+```
 npm install           # install dev dependencies for running on nodejs
 bower install         # install dev dependencies for running in browser
 grunt test            # Run tests
