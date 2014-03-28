@@ -9,16 +9,26 @@
     <body>
         <div id="mocha"></div>
 
-        <script src="../../bower_components/underscore/underscore.js"></script>
+        <!-- Test libs -->
         <script src="../../bower_components/mocha/mocha.js"></script>
         <script src="../../bower_components/chai/chai.js"></script>
         <script src="../../bower_components/sinonjs-built/pkg/sinon.js"></script>
         <script src="../../bower_components/sinon-chai/lib/sinon-chai.js"></script>
-        <script src="../../lib/check-type.js"></script>
+
+        <!-- Fixtures -->
+        <script src="fixtures/has_property_fixture.js"></script>
+        <script src="fixtures/has_attribute_fixture.js"></script>
+        <script src="fixtures/matches_structure_fixture.js"></script>
+
+        <!-- Module -->
+        <script src="../../bower_components/underscore/underscore.js"></script>
+        <script src="../check-type.js"></script>
+
+        <!-- Test setup -->
         <script>
             mocha.setup('tdd');
         </script>
-        <script src="../../lib/tests/check-type.test.js"></script>
+        <script src="check-type.test.js"></script>
         <script>
             // https://github.com/kmiyashiro/grunt-mocha#optionsrun
             if (navigator.userAgent.indexOf('PhantomJS') === -1) {
