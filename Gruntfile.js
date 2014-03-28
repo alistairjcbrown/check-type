@@ -114,7 +114,7 @@ module.exports = function(grunt) {
     generate_toc = {
         readme: {
             files: {
-                'toc.md': ['README.md']
+                "toc.md": ["README.md"]
             }
         }
     };
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-mocha-test");
     grunt.loadNpmTasks("grunt-mocha");
     grunt.loadNpmTasks("grunt-sync-pkg");
-    grunt.loadNpmTasks('grunt-toc');
+    grunt.loadNpmTasks("grunt-toc");
 
     // Allow flag after test
     mocha_tasks = [ "mochaTest", "mocha" ];
