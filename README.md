@@ -258,7 +258,9 @@ check(my_object).matches({
 
 The functionality of `check` can be used in combination, for example when validating response data.
 
-#### Set up `check-type`
+See the example below as a [jsfiddle](http://jsfiddle.net/alistairjcbrown/B9AHu/).
+
+##### Set up `check-type`
 
 ```js
 var custom_types = {};
@@ -281,7 +283,7 @@ check.init();
 check.init(custom_types);
 ```
 
-#### Retrieve username and password from authentication request
+##### Retrieve username and password from authentication request
 
 ```js
 function handleAuthentication(request) {
