@@ -22,7 +22,7 @@ This module relies on [Underscore.js](http://underscorejs.org/).
 
 `check-type` is available through the [npm package repository](https://npmjs.org/package/check-type).
 
-In a node environment, simply install [using npm](https://www.npmjs.org/).
+For NodeJs package management, you can install [using npm](https://www.npmjs.org/).
 
 ```
 npm install check-type
@@ -38,7 +38,7 @@ For front-end package management, you can install [using Bower](http://bower.io/
 bower install check-type
 ```
 
-### Browser
+### Manual
 
 For manual management, you can grab the Javascript file directly.
 You will need to grab `underscore.js` as well.
@@ -234,7 +234,7 @@ check(my_object).has("foo.bar");     // false
 ```js
 var my_object = {
     "customer_number": 123456789,
-    "password": "abc123"
+    "password":        "abc123"
 };
 
 check(my_object).matches({
@@ -260,7 +260,7 @@ The functionality of `check` can be used in combination, for example when valida
 
 See the example below as a [jsfiddle](http://jsfiddle.net/alistairjcbrown/B9AHu/).
 
-##### Set up `check-type`
+#### Set up `check-type`
 
 ```js
 var custom_types = {};
@@ -283,7 +283,7 @@ check.init();
 check.init(custom_types);
 ```
 
-##### Retrieve username and password from authentication request
+#### Retrieve username and password from authentication request
 
 ```js
 function handleAuthentication(request) {
