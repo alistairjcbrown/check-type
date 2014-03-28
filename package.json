@@ -33,6 +33,7 @@
     "grunt-mocha": "latest",
     "grunt-mocha-test": "latest",
     "grunt-sync-pkg": "latest",
+    "grunt-toc": "latest",
     "mocha": "latest",
     "sinon": "latest",
     "sinon-chai": "latest"

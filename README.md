@@ -6,13 +6,44 @@ A type checking framework for Javascript.
 ---
 
 
-## Dependency
+## Table of Contents
 
-This module relies on [Underscore.js](http://underscorejs.org/).
+  * [Dependencies](#dependencies)
+  * [Installation](#installation)
+    * [NodeJs](#nodejs)
+    * [Bower](#bower)
+    * [Manual](#manual)
+  * [Use](#use)
+    * [NodeJs](#nodejs)
+    * [Browser](#browser)
+    * [RequireJS](#requirejs)
+  * [Testing](#testing)
+    * [Test in Nodejs](#test-in-nodejs)
+    * [Test in Browser](#test-in-browser)
+    * [Test in Browser under PhantomJS](#test-in-browser-under-phantomjs)
+    * [Test All](#test-all)
+  * [Init](#init)
+    * [Simple use](#simple-use)
+    * [More complex use](#more-complex-use)
+  * [Clear](#clear)
+  * [Type checking](#type-checking)
+    * [Example: Checking for string using `is`](#example-checking-for-string-using-is)
+    * [Example: Checking for string using `is.not`](#example-checking-for-string-using-isnot)
+  * [Object path checking](#object-path-checking)
+    * [Example: Checking object path using `has`](#example-checking-object-path-using-has)
+  * [Object structure checking](#object-structure-checking)
+    * [Example: Checking object properties using `matches`](#example-checking-object-properties-using-matches)
+  * [Complex example](#complex-example)
+      * [Set up `check-type`](#set-up-check-type)
+      * [Retrieve username and password from authentication request](#retrieve-username-and-password-from-authentication-request)
 
 
 ---
 
+
+## Dependencies
+
+ * [Underscore.js](http://underscorejs.org/).
 
 
 

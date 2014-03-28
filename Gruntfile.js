@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 
         return base;
     },
-    jshint, mocha_nodejs, mocha_browser, mocha_tasks, sync_meta;
+    jshint, mocha_nodejs, mocha_browser, mocha_tasks, sync_meta, generate_toc;
 
     // ------
 
@@ -111,12 +111,21 @@ module.exports = function(grunt) {
         ]
     };
 
+    generate_toc = {
+        readme: {
+            files: {
+                'toc.md': ['README.md']
+            }
+        }
+    };
+
     grunt.initConfig({
         "pkg":       grunt.file.readJSON("package.json"),
         "jshint":    jshint,
         "mochaTest": mocha_nodejs,
         "mocha":     mocha_browser,
-        "sync":      sync_meta
+        "sync":      sync_meta,
+        "toc":       generate_toc
     });
 
     // Load Tasks
@@ -124,6 +133,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-mocha-test");
     grunt.loadNpmTasks("grunt-mocha");
     grunt.loadNpmTasks("grunt-sync-pkg");
+    grunt.loadNpmTasks('grunt-toc');
 
     // Allow flag after test
     mocha_tasks = [ "mochaTest", "mocha" ];
