@@ -115,9 +115,6 @@ define([ "check-type" ], function(check) {
 ```
 
 
----
-
-
 ## Testing
 
 Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](http://www.jshint.com/about/) and [Mocha](http://visionmedia.github.io/mocha/).
@@ -151,9 +148,6 @@ npm install           # install dev dependencies for running on nodejs
 bower install         # install dev dependencies for running in browser
 grunt test            # Run tests
 ```
-
-
----
 
 
 ## Init
@@ -199,9 +193,6 @@ check.clear();
 ```
 
 
----
-
-
 ## Type checking
 
 Once the `check` function has been initialised, it can utilise any defined type checking functions using `is`.
@@ -232,8 +223,6 @@ check(my_string).is.not("number"); // true
 check(my_string).is.not("foo");    // throws Error for unsupported type
 ```
 
----
-
 
 ## Object path checking
 
@@ -251,9 +240,6 @@ var my_object = {
 check(my_object).has("hello.world"); // true
 check(my_object).has("foo.bar");     // false
 ```
-
-
----
 
 
 ## Object structure checking
@@ -280,9 +266,6 @@ check(my_object).matches({
 });
 // false
 ```
-
-
----
 
 
 ## Complex example
