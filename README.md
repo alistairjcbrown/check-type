@@ -206,7 +206,7 @@ check(my_string).is.not("foo");    // throws Error for unsupported type
 
 ## Object path checking
 
-`check-type` can also check for the presence of values within an object under a particular path.
+`check-type` can check for the presence of values within an object under a particular path.
 
 ### Example: Checking object path using `has`
 
@@ -225,21 +225,81 @@ check(my_object).has("foo.bar");     // false
 ---
 
 
-## Combining type checking and object paths
+## Object structure checking
 
-Type checking and value presence in an object can be used in combination, for example when pulling values from a configuration object.
+`check-type` can check an object properties for specific types
 
-### Example: Combining `is` and `has`
+### Example: Checking object properties using `matches`
 
 ```js
 var my_object = {
-    hello: {
-        world: "test"
-    }
+    "customer_number": 123456789,
+    "password": "abc123"
 };
 
-if (check(my_object).has("hello.world") &&
-    check(my_object.hello.world).is("string")) {
-    // Success
+check(my_object).matches({
+    "customer_number": "number",
+    "password":        "string"
+});
+// true
+
+check(my_object).matches({
+    "username": "string",
+    "password": "string"
+});
+// false
+```
+
+
+---
+
+
+## Complex example
+
+The functionality of `check` can be used in combination, for example when validating response data.
+
+#### Set up `check-type`
+
+```js
+var custom_types = {};
+
+custom_types.isUsername = function(value) {
+    return /^\w+$/.test(value);
+};
+
+custom_types.isAuthObject = function(value) {
+    return check(value).matches({
+        "username": "username",
+        "password": "string"
+    });
+};
+
+// Initialise with underscorejs functions
+check.init();
+
+// Add custom functions too
+check.init(custom_types);
+```
+
+#### Retrieve username and password from authentication request
+
+```js
+function handleAuthentication(request) {
+    var username, password;
+
+    if (check(request).has("auth") &&
+        check(request.auth).is("AuthObject")) {
+
+        username = request.auth.username;
+        password = request.auth.password;
+
+        return {
+            username: username,
+            password: password
+        };
+
+    }
+
+    return false;
 }
 ```
