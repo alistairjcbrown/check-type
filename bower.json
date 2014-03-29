@@ -1,16 +1,17 @@
 {
   "name": "check-type",
-  "version": "0.4.2",
-  "author": "Alistair Brown <github@alistairjcbrown.com>",
-  "description": "Library to check variable type and properties in object.",
-  "homepage": "https://github.com/alistairjcbrown/check-type",
+  "version": "0.4.3",
   "main": [
     "./lib/check-type.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/alistairjcbrown/check-type.git"
+  "description": "Library to check variable type and properties in object.",
+  "author": "Alistair Brown <github@alistairjcbrown.com>",
+  "bugs": "https://github.com/alistairjcbrown/check-type/issues",
+  "contributors": [],
+  "dependencies": {
+    "underscore": "~1.6.0"
   },
+  "homepage": "https://github.com/alistairjcbrown/check-type",
   "keywords": [
     "util",
     "type",
@@ -18,20 +19,9 @@
     "checking",
     "library"
   ],
-  "bugs": "https://github.com/alistairjcbrown/check-type/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/alistairjcbrown/check-type/master/LICENSE"
-    }
-  ],
-  "dependencies": {
-    "underscore": "latest"
-  },
-  "devDependencies": {
-    "chai": "latest",
-    "mocha": "latest",
-    "sinonjs-built": "latest",
-    "sinon-chai": "latest"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alistairjcbrown/check-type.git"
   }
 }

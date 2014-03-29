@@ -27,7 +27,8 @@ module.exports = function(grunt) {
 
         return base;
     },
-    jshint, mocha_nodejs, mocha_browser, mocha_tasks, sync_meta, generate_toc;
+    jshint, mocha_nodejs, mocha_browser, mocha_tasks,
+    check_meta, sync_meta, generate_toc;
 
     // ------
 
@@ -94,41 +95,60 @@ module.exports = function(grunt) {
         }
     };
 
-    // Sync all shared properties between meta files
-    sync_meta = {
-        include: [
-            "name",
-            "version",
-            "author",
-            "description",
-            "homepage",
-            "main",
-            "repository",
-            "keywords",
-            "bugs",
-            "licenses",
-            "dependencies"
-        ]
+    // Check all properties are correct in the package.json file
+    check_meta = {
+        "all": {
+            "options": {
+                // make sure package.json ends with \n\n, default false
+                "blankLine": true,
+                "version": function (value) {
+                    // strict version number validation
+                    return (/\d{1,2}\.\d{1,2}\.\d{1,2}/).test(value);
+                }
+            }
+        }
     };
 
+    // Sync all shared properties between meta files
+    sync_meta = {
+        "options": {
+            "include": [
+                "name",
+                "description",
+                "version",
+                "author",
+                "bugs",
+                "contributors",
+                "dependencies",
+                "homepage",
+                "keywords",
+                "license",
+                "main",
+                "repository"
+            ]
+        }
+    };
+
+    // Generate markdown table of contents
     generate_toc = {
-        options: {
-            heading: "## Table of Contents\n\n"
+        "options": {
+            "heading": "## Table of Contents\n\n"
         },
-        readme: {
-            files: {
+        "readme": {
+            "files": {
                 "toc.md": ["README.md"]
             }
         }
     };
 
     grunt.initConfig({
-        "pkg":       grunt.file.readJSON("package.json"),
-        "jshint":    jshint,
-        "mochaTest": mocha_nodejs,
-        "mocha":     mocha_browser,
-        "sync":      sync_meta,
-        "toc":       generate_toc
+        "pkg":          grunt.file.readJSON("package.json"),
+        "jshint":       jshint,
+        "mochaTest":    mocha_nodejs,
+        "mocha":        mocha_browser,
+        "nice-package": check_meta,
+        "sync":         sync_meta,
+        "toc":          generate_toc,
     });
 
     // Load Tasks
@@ -137,6 +157,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-mocha");
     grunt.loadNpmTasks("grunt-sync-pkg");
     grunt.loadNpmTasks("grunt-toc");
+    grunt.loadNpmTasks("grunt-nice-package");
 
     // Allow flag after test
     mocha_tasks = [ "mochaTest", "mocha" ];
@@ -151,7 +172,7 @@ module.exports = function(grunt) {
     // Define tasks
     grunt.registerTask("hint",    [ "jshint" ]);
     grunt.registerTask("test",      mocha_tasks );
-    grunt.registerTask("go",      [ "sync", "hint", "test" ]);
+    grunt.registerTask("go",      [ "nice-package", "sync", "hint", "test" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };

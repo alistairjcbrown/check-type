@@ -1,14 +1,30 @@
 {
   "name": "check-type",
-  "version": "0.4.2",
-  "author": "Alistair Brown <github@alistairjcbrown.com>",
   "description": "Library to check variable type and properties in object.",
-  "homepage": "https://github.com/alistairjcbrown/check-type",
-  "main": "./lib/check-type.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/alistairjcbrown/check-type.git"
+  "version": "0.4.3",
+  "author": "Alistair Brown <github@alistairjcbrown.com>",
+  "bugs": "https://github.com/alistairjcbrown/check-type/issues",
+  "contributors": [],
+  "dependencies": {
+    "underscore": "~1.6.0"
   },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-mocha": "~0.4.10",
+    "grunt-mocha-test": "~0.10.0",
+    "grunt-nice-package": "~0.3.0",
+    "grunt-sync-pkg": "~0.1.2",
+    "grunt-toc": "~0.1.0",
+    "mocha": "~1.18.2",
+    "sinon": "~1.9.0",
+    "sinon-chai": "~2.5.0"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "homepage": "https://github.com/alistairjcbrown/check-type",
   "keywords": [
     "util",
     "type",
@@ -16,29 +32,11 @@
     "checking",
     "library"
   ],
-  "bugs": "https://github.com/alistairjcbrown/check-type/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/alistairjcbrown/check-type/master/LICENSE"
-    }
-  ],
-  "dependencies": {
-    "underscore": "latest"
-  },
-  "devDependencies": {
-    "chai": "latest",
-    "grunt": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-mocha": "latest",
-    "grunt-mocha-test": "latest",
-    "grunt-sync-pkg": "latest",
-    "grunt-toc": "latest",
-    "mocha": "latest",
-    "sinon": "latest",
-    "sinon-chai": "latest"
-  },
-  "engines": {
-    "node": ">= 0.8.0"
+  "license": "MIT",
+  "main": "./lib/check-type.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alistairjcbrown/check-type.git"
   }
 }
+
