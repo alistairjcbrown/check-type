@@ -112,6 +112,9 @@ module.exports = function(grunt) {
     };
 
     generate_toc = {
+        options: {
+            heading: "## Table of Contents\n\n"
+        },
         readme: {
             files: {
                 "toc.md": ["README.md"]

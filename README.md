@@ -10,18 +10,19 @@ A type checking framework for Javascript.
 
   * [Dependencies](#dependencies)
   * [Installation](#installation)
-    * [NodeJs](#nodejs)
+    * [Node.js](#nodejs)
     * [Bower](#bower)
     * [Manual](#manual)
   * [Use](#use)
-    * [NodeJs](#nodejs)
+    * [Node.js](#nodejs)
     * [Browser](#browser)
     * [RequireJS](#requirejs)
   * [Testing](#testing)
-    * [Test in Nodejs](#test-in-nodejs)
+    * [Test in Node.js](#test-in-nodejs)
     * [Test in Browser](#test-in-browser)
     * [Test in Browser under PhantomJS](#test-in-browser-under-phantomjs)
     * [Test All](#test-all)
+  * [No Conflict](#no-conflict)
   * [Init](#init)
     * [Simple use](#simple-use)
     * [More complex use](#more-complex-use)
@@ -49,11 +50,11 @@ A type checking framework for Javascript.
 
 ## Installation
 
-### NodeJs
+### Node.js
 
 `check-type` is available through the [npm package repository](https://npmjs.org/package/check-type).
 
-For NodeJs package management, you can install [using npm](https://www.npmjs.org/).
+For Node.js package management, you can install [using npm](https://www.npmjs.org/).
 
 ```
 npm install check-type
@@ -82,13 +83,13 @@ wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/lib/che
 
 ## Use
 
-### NodeJs
+### Node.js
 
 ```js
 var check = require("check-type").init();
 ```
 
-The module can be required using NodeJS built in `require` ([See example](lib/examples/nodejs)).
+The module can be required using Node.js built in `require` ([See example](lib/examples/nodejs)).
 
 
 ### Browser
@@ -106,7 +107,7 @@ The module can be used in the browser through the `<script>` tag and will bind t
 
 ### RequireJS
 
-The module supports the AMD format and uses `define` if available. Therefore it can be used as a RequireJS module ([See Browser example](lib/examples/requirejs/browser), [See NodeJS example](lib/examples/requirejs/nodejs)).
+The module supports the AMD format and uses `define` if available. Therefore it can be used as a RequireJS module ([See Browser example](lib/examples/requirejs/browser), [See Node.js example](lib/examples/requirejs/nodejs)).
 
 ```js
 define([ "check-type" ], function(check) {
@@ -119,11 +120,11 @@ define([ "check-type" ], function(check) {
 
 Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](http://www.jshint.com/about/) and [Mocha](http://visionmedia.github.io/mocha/).
 
-### Test in Nodejs
+### Test in Node.js
 
 ```
-npm install           # install dev dependencies for running on nodejs
-grunt test --nodejs   # Run test in nodejs
+npm install           # install dev dependencies for running on node.js
+grunt test --nodejs   # Run test in node.js
 ```
 
 ### Test in Browser
@@ -136,7 +137,7 @@ bower install         # install dev dependencies for running in browser
 ### Test in Browser under PhantomJS
 
 ```
-npm install           # install dev dependencies for running on nodejs
+npm install           # install dev dependencies for running on node.js
 bower install         # install dev dependencies for running in browser
 grunt test --browser  # Run test in phantomjs
 ```
@@ -144,10 +145,17 @@ grunt test --browser  # Run test in phantomjs
 ### Test All
 
 ```
-npm install           # install dev dependencies for running on nodejs
+npm install           # install dev dependencies for running on node.js
 bower install         # install dev dependencies for running in browser
 grunt test            # Run tests
 ```
+
+
+## No Conflict
+
+To prevent conlicts with other libraries using `window.check`, if `check-type` binds to `window` it will also provide a `check.noConflict` function to restore the variable to its previous value.
+
+`check-type` will only bind to `window` in the browser environment when RequireJS is not available.
 
 
 ## Init
