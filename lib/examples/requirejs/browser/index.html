@@ -5,32 +5,26 @@
         <title>Browser Example</title>
     </head>
     <body>
-        <p>
-            RequireJS Browser Example for
-            <a href="../../../README.md">
+        <h1>
+            Browser Example for
+            <a href="../../../../">
                 check-type
             </a>
-        </p>
-        <p>
-            Please view developer console / source.
+        </h1>
+        <h2>
+            Results
+        </h2>
+        <p id="results">
+            No results - Please view developer console to see if an error occurred.
         </p>
 
-        <script data-main="scripts/main" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script data-main="./app" src="bower_components/requirejs/require.js"></script>
         <script>
             require.config({
                 paths: {
-                    "check-type": "../../../../check-type",
-                    "underscore": "../../../../../node_modules/underscore/underscore"
+                    "check-type": "bower_components/check-type/lib/check-type",
+                    "underscore": "bower_components/underscore/underscore"
                 }
-            });
-
-            define("main", [ "check-type" ], function(check) {
-                var is_check_function;
-
-                check.init();
-
-                is_check_function = check(check).is("function");
-                console.log("Is check function available?", is_check_function);
             });
         </script>
     </body>
