@@ -68,15 +68,28 @@ For front-end package management, you can install [using Bower](http://bower.io/
 bower install check-type
 ```
 
+### Component
+
+`check-type` is available through the [component](http://component.io/alistairjcbrown/check-type) which piggyback on GitHub.
+
+For package management, you can install [using Component](https://github.com/component/component#installation).
+
+```
+component install alistairjcbrown/check-type
+```
+
 ### Manual
 
-For manual management, you can grab the Javascript file directly.
+For manual management, you can grab the Javascript file directly or clone the git repository.
 You will need to grab `underscore.js` as well.
 
 ```
+# Grab the file
 wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/lib/check-type.js
-```
 
+# Clone the repo
+git clone git@github.com:alistairjcbrown/check-type.git
+```
 
 
 ## Use

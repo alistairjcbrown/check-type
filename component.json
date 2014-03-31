@@ -6,7 +6,7 @@
 	"bugs": "https://github.com/alistairjcbrown/check-type/issues",
 	"contributors": [],
 	"dependencies": {
-		"jashkenas/underscore": "~1.6.0"
+		"jashkenas/underscore": "*"
 	},
 	"homepage": "https://github.com/alistairjcbrown/check-type",
 	"keywords": [
