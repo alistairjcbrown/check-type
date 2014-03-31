@@ -1,19 +1,12 @@
 {
 	"name": "check-type",
-	"version": "0.4.3",
-	"main": "./lib/check-type.js",
 	"description": "Library to check variable type and properties in object.",
+	"version": "0.4.3",
 	"author": "Alistair Brown <github@alistairjcbrown.com>",
 	"bugs": "https://github.com/alistairjcbrown/check-type/issues",
 	"contributors": [],
 	"dependencies": {
 		"underscore": "~1.6.0"
-	},
-	"devDependencies": {
-		"chai": "~1.9.1",
-		"mocha": "~1.18.2",
-		"sinonjs-built": "~1.8.2",
-		"sinon-chai": "~2.5.0"
 	},
 	"homepage": "https://github.com/alistairjcbrown/check-type",
 	"keywords": [
@@ -24,13 +17,9 @@
 		"library"
 	],
 	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/alistairjcbrown/check-type.git"
-	},
-	"ignore": [
-		"./Gruntfile.js",
-		"./lib/examples/",
-		"./lib/tests/"
+	"main": "./lib/check-type.js",
+	"repo": "alistairjcbrown/check-type",
+	"scripts": [
+		"./lib/check-type.js"
 	]
 }

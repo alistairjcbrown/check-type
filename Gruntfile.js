@@ -111,8 +111,10 @@ module.exports = function(grunt) {
 
     // Sync all shared properties between meta files
     sync_meta = {
-        "options": {
-            "include": [
+        bower: {
+            src: 'package.json',
+            dest: 'bower.json',
+            fields: [
                 "name",
                 "description",
                 "version",
@@ -125,6 +127,23 @@ module.exports = function(grunt) {
                 "license",
                 "main",
                 "repository"
+            ]
+        },
+        component: {
+            src: 'package.json',
+            dest: 'component.json',
+            fields: [
+                "name",
+                "description",
+                "version",
+                "author",
+                "bugs",
+                "contributors",
+                "dependencies",
+                "homepage",
+                "keywords",
+                "license",
+                "main"
             ]
         }
     };
@@ -147,17 +166,12 @@ module.exports = function(grunt) {
         "mochaTest":    mocha_nodejs,
         "mocha":        mocha_browser,
         "nice-package": check_meta,
-        "sync":         sync_meta,
+        "update_json":  sync_meta,
         "toc":          generate_toc,
     });
 
     // Load Tasks
-    grunt.loadNpmTasks("grunt-contrib-jshint");
-    grunt.loadNpmTasks("grunt-mocha-test");
-    grunt.loadNpmTasks("grunt-mocha");
-    grunt.loadNpmTasks("grunt-sync-pkg");
-    grunt.loadNpmTasks("grunt-toc");
-    grunt.loadNpmTasks("grunt-nice-package");
+    require("load-grunt-tasks")(grunt);
 
     // Allow flag after test
     mocha_tasks = [ "mochaTest", "mocha" ];

@@ -1,5 +1,7 @@
 # check-type
 
+[![Build Status](https://travis-ci.org/alistairjcbrown/check-type.svg?branch=master)](https://travis-ci.org/alistairjcbrown/check-type)
+
 A type checking framework for Javascript.
 
 
