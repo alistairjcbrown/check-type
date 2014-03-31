@@ -5,7 +5,6 @@ A type checking framework for Javascript.
 
 ---
 
-
 ## Table of Contents
 
   * [Dependencies](#dependencies)
@@ -20,8 +19,6 @@ A type checking framework for Javascript.
   * [Testing](#testing)
     * [Test in Node.js](#test-in-nodejs)
     * [Test in Browser](#test-in-browser)
-    * [Test in Browser under PhantomJS](#test-in-browser-under-phantomjs)
-    * [Test All](#test-all)
   * [No Conflict](#no-conflict)
   * [Init](#init)
     * [Simple use](#simple-use)
@@ -37,7 +34,6 @@ A type checking framework for Javascript.
   * [Complex example](#complex-example)
       * [Set up `check-type`](#set-up-check-type)
       * [Retrieve username and password from authentication request](#retrieve-username-and-password-from-authentication-request)
-
 
 ---
 
@@ -120,35 +116,26 @@ define([ "check-type" ], function(check) {
 
 Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](http://www.jshint.com/about/) and [Mocha](http://visionmedia.github.io/mocha/).
 
+Get all of the developer dependecies by running:
+
+```
+npm install           # install dev dependencies
+```
+
 ### Test in Node.js
 
 ```
-npm install           # install dev dependencies for running on node.js
-grunt test --nodejs   # Run test in node.js
+grunt lint            # Lint the code with JSHint
+grunt test --nodejs   # Run all tests in node.js
+grunt test --browser  # Run all tests in phantomjs
+grunt test            # Run all tests in both environments
+grunt go              # Run everything above
 ```
 
 ### Test in Browser
 
-```
-bower install         # install dev dependencies for running in browser
-# Open lib/test/check-type.test.html in browser
-```
+Open `lib/test/check-type.test.html` in browser
 
-### Test in Browser under PhantomJS
-
-```
-npm install           # install dev dependencies for running on node.js
-bower install         # install dev dependencies for running in browser
-grunt test --browser  # Run test in phantomjs
-```
-
-### Test All
-
-```
-npm install           # install dev dependencies for running on node.js
-bower install         # install dev dependencies for running in browser
-grunt test            # Run tests
-```
 
 
 ## No Conflict

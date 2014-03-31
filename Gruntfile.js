@@ -170,9 +170,10 @@ module.exports = function(grunt) {
     }
 
     // Define tasks
-    grunt.registerTask("hint",    [ "jshint" ]);
+    grunt.registerTask("lint",    [ "jshint" ]);
     grunt.registerTask("test",      mocha_tasks );
-    grunt.registerTask("go",      [ "nice-package", "sync", "hint", "test" ]);
+    grunt.registerTask("go",      [ "lint", "test" ]);
+    grunt.registerTask("build",   [ "go", "toc", "nice-package", "sync" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };
