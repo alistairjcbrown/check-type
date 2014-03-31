@@ -18,6 +18,8 @@ module.exports = function(grunt) {
             "!./**/node_modules/**/*{extension}",
             "!./bower_components/**/*{extension}",
             "!./**/bower_components/**/*{extension}",
+            "!./components/**/*{extension}",
+            "!./**/components/**/*{extension}",
             "!./.git/"
         ];
 
@@ -112,8 +114,8 @@ module.exports = function(grunt) {
     // Sync all shared properties between meta files
     sync_meta = {
         bower: {
-            src: 'package.json',
-            dest: 'bower.json',
+            src: "package.json",
+            dest: "bower.json",
             fields: [
                 "name",
                 "description",
@@ -130,8 +132,8 @@ module.exports = function(grunt) {
             ]
         },
         component: {
-            src: 'package.json',
-            dest: 'component.json',
+            src: "package.json",
+            dest: "component.json",
             fields: [
                 "name",
                 "description",
@@ -139,11 +141,12 @@ module.exports = function(grunt) {
                 "author",
                 "bugs",
                 "contributors",
-                "dependencies",
+                // "dependencies",
                 "homepage",
                 "keywords",
                 "license",
                 "main"
+                // "repository"
             ]
         }
     };
@@ -187,7 +190,7 @@ module.exports = function(grunt) {
     grunt.registerTask("lint",    [ "jshint" ]);
     grunt.registerTask("test",      mocha_tasks );
     grunt.registerTask("go",      [ "lint", "test" ]);
-    grunt.registerTask("build",   [ "go", "toc", "nice-package", "sync" ]);
+    grunt.registerTask("build",   [ "go", "toc", "nice-package", "update_json" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };

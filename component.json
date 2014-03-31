@@ -1,12 +1,12 @@
 {
 	"name": "check-type",
 	"description": "Library to check variable type and properties in object.",
-	"version": "0.4.3",
+	"version": "0.4.4",
 	"author": "Alistair Brown <github@alistairjcbrown.com>",
 	"bugs": "https://github.com/alistairjcbrown/check-type/issues",
 	"contributors": [],
 	"dependencies": {
-		"underscore": "~1.6.0"
+		"jashkenas/underscore": "~1.6.0"
 	},
 	"homepage": "https://github.com/alistairjcbrown/check-type",
 	"keywords": [

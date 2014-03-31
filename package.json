@@ -1,7 +1,7 @@
 {
   "name": "check-type",
   "description": "Library to check variable type and properties in object.",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "author": "Alistair Brown <github@alistairjcbrown.com>",
   "bugs": "https://github.com/alistairjcbrown/check-type/issues",
   "contributors": [],
@@ -46,3 +46,4 @@
     "test": "./node_modules/grunt-cli/bin/grunt test"
   }
 }
+
