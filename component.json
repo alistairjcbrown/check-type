@@ -17,9 +17,9 @@
 		"library"
 	],
 	"license": "MIT",
-	"main": "./lib/check-type.js",
+	"main": "lib/check-type.js",
 	"repo": "alistairjcbrown/check-type",
 	"scripts": [
-		"./lib/check-type.js"
+		"lib/check-type.js"
 	]
 }

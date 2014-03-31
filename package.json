@@ -36,7 +36,7 @@
     "library"
   ],
   "license": "MIT",
-  "main": "./lib/check-type.js",
+  "main": "lib/check-type.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/alistairjcbrown/check-type.git"
