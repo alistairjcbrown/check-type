@@ -29,5 +29,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/alistairjcbrown/check-type.git"
-  }
+  },
+  "ignore": [
+    "./Gruntfile.js",
+    "./lib/examples/",
+    "./lib/tests/"
+  ]
 }
