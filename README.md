@@ -13,6 +13,7 @@ A type checking framework for Javascript.
   * [Installation](#installation)
     * [Node.js](#nodejs)
     * [Bower](#bower)
+    * [Component](#component)
     * [Manual](#manual)
   * [Use](#use)
     * [Node.js](#nodejs)
@@ -50,7 +51,7 @@ A type checking framework for Javascript.
 
 ### Node.js
 
-`check-type` is available through the [npm package repository](https://npmjs.org/package/check-type).
+`check-type` is available through the [npm package manager](https://npmjs.org/package/check-type).
 
 For Node.js package management, you can install [using npm](https://www.npmjs.org/).
 
@@ -60,7 +61,7 @@ npm install check-type
 
 ### Bower
 
-`check-type` is available through the [bower package repository](http://bower.io/search/?q=check-type).
+`check-type` is available through the [bower package manager](http://bower.io/search/?q=check-type).
 
 For front-end package management, you can install [using Bower](http://bower.io/).
 
@@ -70,7 +71,7 @@ bower install check-type
 
 ### Component
 
-`check-type` is available through the [component](http://component.io/alistairjcbrown/check-type) which piggyback on GitHub.
+`check-type` is available through the [component package manager](http://component.io/alistairjcbrown/check-type).
 
 For package management, you can install [using Component](https://github.com/component/component#installation).
 
