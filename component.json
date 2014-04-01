@@ -1,7 +1,7 @@
 {
 	"name": "check-type",
 	"description": "Library to check variable type and properties in object.",
-	"version": "0.4.4",
+	"version": "0.4.5",
 	"author": "Alistair Brown <github@alistairjcbrown.com>",
 	"bugs": "https://github.com/alistairjcbrown/check-type/issues",
 	"contributors": [],
@@ -17,9 +17,9 @@
 		"library"
 	],
 	"license": "MIT",
-	"main": "lib/check-type.js",
+	"main": "check-type.min.js",
 	"repo": "alistairjcbrown/check-type",
 	"scripts": [
-		"lib/check-type.js"
+		"check-type.min.js"
 	]
 }

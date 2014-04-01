@@ -1,8 +1,10 @@
-# check-type
+# Check Type
 
 [![Build Status](https://travis-ci.org/alistairjcbrown/check-type.svg?branch=master)](https://travis-ci.org/alistairjcbrown/check-type)
 
 A type checking framework for Javascript.
+
+Check type lets you check variable types and structures with the format `check(x).is("y")` and `check(x).has("a.b")`
 
 
 ---
@@ -37,6 +39,7 @@ A type checking framework for Javascript.
   * [Complex example](#complex-example)
       * [Set up `check-type`](#set-up-check-type)
       * [Retrieve username and password from authentication request](#retrieve-username-and-password-from-authentication-request)
+  * [Contact](#contact)
 
 ---
 
@@ -330,3 +333,9 @@ function handleAuthentication(request) {
     return false;
 }
 ```
+
+## Contact
+
+Twitter [@alistairjcbrown](http://twitter.com/alistairjcbrown)
+
+

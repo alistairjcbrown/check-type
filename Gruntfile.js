@@ -14,6 +14,7 @@ module.exports = function(grunt) {
         var base = [
             "./*{extension}",
             "./**/*{extension}",
+            "!./*.min{extension}",
             "!./node_modules/**/*{extension}",
             "!./**/node_modules/**/*{extension}",
             "!./bower_components/**/*{extension}",
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
         return base;
     },
     jshint, mocha_nodejs, mocha_browser, mocha_tasks,
-    check_meta, sync_meta, generate_toc;
+    check_meta, sync_meta, generate_toc, uglify;
 
     // ------
 
@@ -163,6 +164,25 @@ module.exports = function(grunt) {
         }
     };
 
+    // Minify and uglify the code
+    uglify = {
+        options: {
+            mangle: {
+                except: [ "_" ]
+            },
+            compress: {
+                drop_console: true
+            },
+            banner: "/*! <%= pkg.name %>@v<%= pkg.version %> - " +
+                    "<%= grunt.template.today(\"yyyy-mm-dd\") %> */\n"
+        },
+        my_target: {
+            files: {
+                "check-type.min.js": [ "lib/check-type.js" ]
+            }
+        }
+    };
+
     grunt.initConfig({
         "pkg":          grunt.file.readJSON("package.json"),
         "jshint":       jshint,
@@ -171,6 +191,7 @@ module.exports = function(grunt) {
         "nice-package": check_meta,
         "update_json":  sync_meta,
         "toc":          generate_toc,
+        "uglify":       uglify
     });
 
     // Load Tasks
@@ -190,7 +211,7 @@ module.exports = function(grunt) {
     grunt.registerTask("lint",    [ "jshint" ]);
     grunt.registerTask("test",      mocha_tasks );
     grunt.registerTask("go",      [ "lint", "test" ]);
-    grunt.registerTask("build",   [ "go", "toc", "nice-package", "update_json" ]);
+    grunt.registerTask("build",   [ "lint", "nice-package", "update_json", "uglify", "test", "toc" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };
