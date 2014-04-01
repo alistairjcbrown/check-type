@@ -1,6 +1,6 @@
 {
 	"name": "check-type",
-	"version": "0.4.6",
+	"version": "0.4.7",
 	"main": "check-type.min.js",
 	"description": "Library to check variable type and properties in object.",
 	"author": "Alistair Brown <github@alistairjcbrown.com>",
