@@ -89,7 +89,7 @@ You will need to grab `underscore.js` as well.
 
 ```
 # Grab the file
-wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/lib/check-type.js
+wget https://raw.githubusercontent.com/alistairjcbrown/check-type/master/check-type.min.js
 
 # Clone the repo
 git clone git@github.com:alistairjcbrown/check-type.git
@@ -111,7 +111,7 @@ The module can be required using Node.js built in `require` ([See example](lib/e
 
 ```html
 <script src="/path/to/underscore"></script>
-<script src="/path/to/check-type/lib/check-type.js"></script>
+<script src="/path/to/check-type/check-type.min.js"></script>
 <script>
     check.init();
 </script>

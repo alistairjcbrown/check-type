@@ -1,7 +1,7 @@
 {
   "name": "check-type",
   "description": "Library to check variable type and properties in object.",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "author": "Alistair Brown <github@alistairjcbrown.com>",
   "bugs": "https://github.com/alistairjcbrown/check-type/issues",
   "contributors": [],
@@ -43,7 +43,7 @@
     "url": "git://github.com/alistairjcbrown/check-type.git"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "[ -f ./node_modules/bower/bin/bower ] && ./node_modules/bower/bin/bower install",
     "test": "./node_modules/grunt-cli/bin/grunt test"
   }
 }
