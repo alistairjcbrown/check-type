@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         return base;
     },
     jshint, mocha_nodejs, mocha_browser, mocha_tasks,
-    check_meta, sync_meta, generate_toc, uglify;
+    check_meta, sync_meta, generate_toc, uglify, coveralls_service;
 
     // ------
 
@@ -183,6 +183,16 @@ module.exports = function(grunt) {
         }
     };
 
+    coveralls_service = {
+        options: {
+            src: "coverage_results/lcov.info",
+            force: true
+        },
+        your_target: {
+            src: "coverage_results/extra-results-*.info"
+        },
+    };
+
     grunt.initConfig({
         "pkg":          grunt.file.readJSON("package.json"),
         "jshint":       jshint,
@@ -191,7 +201,8 @@ module.exports = function(grunt) {
         "nice-package": check_meta,
         "update_json":  sync_meta,
         "toc":          generate_toc,
-        "uglify":       uglify
+        "uglify":       uglify,
+        //"coveralls":    coveralls_service
     });
 
     // Load Tasks

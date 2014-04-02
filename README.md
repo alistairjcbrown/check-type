@@ -1,6 +1,10 @@
 # Check Type
 
 [![Build Status](https://travis-ci.org/alistairjcbrown/check-type.svg?branch=master)](https://travis-ci.org/alistairjcbrown/check-type)
+[![GitHub version](https://badge.fury.io/gh/alistairjcbrown%2Fcheck-type.svg)](http://badge.fury.io/gh/alistairjcbrown%2Fcheck-type)
+[![Dependency Status](https://david-dm.org/alistairjcbrown/check-type.svg?theme=shields.io)](https://david-dm.org/alistairjcbrown/check-type)
+[![devDependency Status](https://david-dm.org/alistairjcbrown/check-type/dev-status.svg?theme=shields.io)](https://david-dm.org/alistairjcbrown/check-type#info=devDependencies)
+[![Coverage Status](https://coveralls.io/repos/alistairjcbrown/check-type/badge.png)](https://coveralls.io/r/alistairjcbrown/check-type)
 
 A type checking framework for Javascript.
 
@@ -56,6 +60,8 @@ Check type lets you check variable types and structures with the format `check(x
 
 `check-type` is available through the [npm package manager](https://npmjs.org/package/check-type).
 
+[![NPM version](https://badge.fury.io/js/check-type.svg)](http://badge.fury.io/js/check-type)
+
 For Node.js package management, you can install [using npm](https://www.npmjs.org/).
 
 ```
@@ -65,6 +71,8 @@ npm install check-type
 ### Bower
 
 `check-type` is available through the [bower package manager](http://bower.io/search/?q=check-type).
+
+[![Bower version](https://badge.fury.io/bo/check-type.svg)](http://badge.fury.io/bo/check-type)
 
 For front-end package management, you can install [using Bower](http://bower.io/).
 
