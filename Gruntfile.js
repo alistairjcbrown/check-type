@@ -207,11 +207,22 @@ module.exports = function(grunt) {
         }
     }
 
+    grunt.registerTask("keybase-sign-dir", "Run keybase directory sign", function() {
+        var shell = require("shelljs"),
+            command = "keybase dir sign", response;
+
+        response = shell.exec(command);
+        if (response.code !== 0) {
+            grunt.warn("Code signing failed");
+            return;
+        }
+    });
+
     // Define tasks
     grunt.registerTask("lint",    [ "jshint" ]);
     grunt.registerTask("test",      mocha_tasks );
     grunt.registerTask("go",      [ "lint", "test" ]);
-    grunt.registerTask("build",   [ "lint", "nice-package", "update_json", "uglify", "test", "toc" ]);
+    grunt.registerTask("build",   [ "lint", "nice-package", "update_json", "uglify", "test", "toc", "keybase-sign-dir" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };

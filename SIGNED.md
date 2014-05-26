@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTg6qQAAoJEJEOHi8Q7zzzzMUH/RLh9mQuTYLgnZU6VK63ms67
-nZJYzSH4RKnvl8yDHxP/jC9I8rmK7W0wMtW3/f2shDBEwz4QB/v/Rrn4528H5ISw
-R29RHmiKsvBdRrdZjK39ut4vLbjbIr53AIbPNRk7MHVG3KM49I0Qlqh2TNMIH5IY
-M8XbnrmFO+QZUdWOyAokV9s7xqxerSbSm0ovuATeVgOLRtOQVlUE1/bbMBegsfFF
-ZQStsV5G0ht4bE5TewCOtCBMzDWk1yyBcers5uT1Gm6pqJaHnZP6CwIfhQPQoree
-1PDmduBNm48AXB0J9zeYRlYVMoSM0M9PCw1hIs7YSaZzAUa5FpNYJRQQhEFIVuo=
-=TXfj
+iQEcBAABAgAGBQJTg63VAAoJEJEOHi8Q7zzzcPYIAJOhm65uNTsJ0dpTt34lbbSt
+Farmmh6AILnxYWaX7KqVR/IIHPMVlt+yZAIBIUaRARZUuaUAN3YcAPAylz3hUZ0V
+pkdNhoBf8/QTwDl/8LaDvzCBy1BMS3P5Q1+CkWDqjkMdCU19jpYYHrc0U8Hp6/f8
+e7H2MqYvvEfo9Sy5Xt+/cwDHnXjWnFWgnx1hXerbXoimU5Hh2Zb+vcv+vbnSK+GG
+zinXe0AU19HAJhdXpHN7F7NS8vhMBRUPisQooGcUFqWy6Zz+ts+diGlF4wkA8cJM
+8JoaPRu33ERVWkERNL7Ovo14sbFhx3sEoN73gNGIP5N3O8Yj1vCDdtuK3a9SiRo=
+=tzS2
 -----END PGP SIGNATURE-----
 
 ```
@@ -25,7 +25,7 @@ size   exec  file                                  contents
              ./                                                                                                    
 50             .gitignore                          15518c53e314172f50549b4a29fde9086008f784effc1a2e65b38f09fb1a1403
 69             .travis.yml                         ab6c157084e6355fc20a86603565ee5fcb9bd8de7cc93dd477ca7e33b60204a1
-5963   x       Gruntfile.js                        e169c6f0df65b040c607725260286a6091ece528f499828a2b9afbe28f320f14
+6323   x       Gruntfile.js                        4a9ec6d5861604f55112ac3f49b6b7e49f4cd990eb119c26a3f0b3827e9c7bf5
 1080           LICENSE                             cfec6a6c39832bb228b8f4622aefb14f08d3c0f02823238c7143c668c3acd898
 9120           README.md                           5d6eb26cf43165f6a24259d324320ab8ca3e779ff15d95a566c0860b15813789
 794            bower.json                          db7df6532e696e543e2986950b09d1d92f17cad701df0245f045cf1e7b6adedb
@@ -56,7 +56,7 @@ size   exec  file                                  contents
 325                  has_attribute_fixture.js      b75e70ef3d253e230c176b193ea44f8eac06ffe41f788b93243fe3fb6fa503f0
 408                  has_property_fixture.js       fd07814084af0eff5535b2d1410f40949cbdf8f411464904a39d36d19dc31e27
 267                  matches_structure_fixture.js  181053a1ce4d5b3947b7a18008313a815e9deeae9e05a5a31dce106bae788e10
-1314           package.json                        d7e3eaf4f0669a4d72c4c712c018679ae7dcd6b29cc4998d5bd6e1fe4f530610
+1338           package.json                        71a4956f10af7c905d2b4cb62d4edbae02d1c359db41dd8f001262fb9cd08a4a
 ```
 
 #### Ignore
