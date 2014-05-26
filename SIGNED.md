@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTg4dkAAoJEJEOHi8Q7zzzvEoIAJfPmfEt7i+UaoRf/KutSIPT
-4o7ELA8gL4AdFAnv+RvNBfw1ZQmx0W7/ek3pQ4WFsUD3tvZ2JAqfXNIG/VLNFiny
-VczsfFaX7494QYg5N0O5fGlF+g2o++dWE/Q2WLlvAPGHkZL26sOHYZh4kMTseLd6
-+BssBOd1yTPXzqjhSkii3OYIhZY/FzuZr9VKPnYf2ma6kBq+oR27yCUii6iVaACG
-4udOA1vp69qsm3eW0KUVEiO7pC3XcQufzd/yadIFaLxtN7NrDP1kMihu05UydCde
-+Dw3UQb7Dvm5rBviZV/NEetp3Dp/Am966DBwJk+BWKRLEM31/ehF9CJkb45qvyo=
-=g2to
+iQEcBAABAgAGBQJTg6qQAAoJEJEOHi8Q7zzzzMUH/RLh9mQuTYLgnZU6VK63ms67
+nZJYzSH4RKnvl8yDHxP/jC9I8rmK7W0wMtW3/f2shDBEwz4QB/v/Rrn4528H5ISw
+R29RHmiKsvBdRrdZjK39ut4vLbjbIr53AIbPNRk7MHVG3KM49I0Qlqh2TNMIH5IY
+M8XbnrmFO+QZUdWOyAokV9s7xqxerSbSm0ovuATeVgOLRtOQVlUE1/bbMBegsfFF
+ZQStsV5G0ht4bE5TewCOtCBMzDWk1yyBcers5uT1Gm6pqJaHnZP6CwIfhQPQoree
+1PDmduBNm48AXB0J9zeYRlYVMoSM0M9PCw1hIs7YSaZzAUa5FpNYJRQQhEFIVuo=
+=TXfj
 -----END PGP SIGNATURE-----
 
 ```
@@ -27,12 +27,12 @@ size   exec  file                                  contents
 69             .travis.yml                         ab6c157084e6355fc20a86603565ee5fcb9bd8de7cc93dd477ca7e33b60204a1
 5963   x       Gruntfile.js                        e169c6f0df65b040c607725260286a6091ece528f499828a2b9afbe28f320f14
 1080           LICENSE                             cfec6a6c39832bb228b8f4622aefb14f08d3c0f02823238c7143c668c3acd898
-8992           README.md                           89b890ea6dc9e5655fc6d3c4c2cf27a26d0861a8cbcd6e6d21757cc8c6d78452
-795            bower.json                          3ce71f717a4a6b0c57e2ce5b385ed5e778df2de5c41c7cb5ad242b4e3a6b4806
-1359           check-type.min.js                   6ad21c4fada573234a2998949346e230d8837ec545997c44b61d8bf6ca80df51
-585            component.json                      f5364e5db529f39451bbaad549dd76a9f122d7b04905477219f611626c7d6178
+9120           README.md                           5d6eb26cf43165f6a24259d324320ab8ca3e779ff15d95a566c0860b15813789
+794            bower.json                          db7df6532e696e543e2986950b09d1d92f17cad701df0245f045cf1e7b6adedb
+1402           check-type.min.js                   ab0e04de7eea212543b3fd4296b9f333dd977af2e7f440df80c3677947e80674
+585            component.json                      773a3a0e0df903b9751d3beb3922b3fa4b0b85350bfdee0c1593f63b68f6552b
                lib/                                                                                                
-6442             check-type.js                     5bca13f3a97c41a0857f464e40e04e6b4a3b8d2b13fe0c6d0001757447acafb1
+6687             check-type.js                     eb4217c6a5116d024b43248b2fd679ff973eb8272ec827c274a6ec81c4b0ba84
                  examples/                                                                                         
                    browser/                                                                                        
 678                  app.js                        28309b9285a84efb6eb52e2bb664e04abcb6afa0f6ac12e26d42b765ea505d67
@@ -51,12 +51,12 @@ size   exec  file                                  contents
 307                    package.json                a1ce41dca36d01b12b8cd4dc9b050a0b0775d45f2bd5abfcee43d87d0a20aecf
                  tests/                                                                                            
 1497               check-type.test.html            fb9f189c429c186c04aa96e2b756b75f6440c5866f42e443e544fb97ebff28cc
-13040  x           check-type.test.js              638365fdd7bbb78381ffc58b0cf1d589d93cf876c14bdb0cf41cfc71d571f2d3
+13588  x           check-type.test.js              22ff4e7fa33c4afe50bca129589cf9080602d2e4a582f0e2a8d62c5a162751ec
                    fixtures/                                                                                       
 325                  has_attribute_fixture.js      b75e70ef3d253e230c176b193ea44f8eac06ffe41f788b93243fe3fb6fa503f0
 408                  has_property_fixture.js       fd07814084af0eff5535b2d1410f40949cbdf8f411464904a39d36d19dc31e27
 267                  matches_structure_fixture.js  181053a1ce4d5b3947b7a18008313a815e9deeae9e05a5a31dce106bae788e10
-1329           package.json                        9c4a46c6cac6406d655e0d43374c50d0d6516e87938ab3fe1ac26eed10cca832
+1314           package.json                        d7e3eaf4f0669a4d72c4c712c018679ae7dcd6b29cc4998d5bd6e1fe4f530610
 ```
 
 #### Ignore
