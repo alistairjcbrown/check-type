@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTg63VAAoJEJEOHi8Q7zzzcPYIAJOhm65uNTsJ0dpTt34lbbSt
-Farmmh6AILnxYWaX7KqVR/IIHPMVlt+yZAIBIUaRARZUuaUAN3YcAPAylz3hUZ0V
-pkdNhoBf8/QTwDl/8LaDvzCBy1BMS3P5Q1+CkWDqjkMdCU19jpYYHrc0U8Hp6/f8
-e7H2MqYvvEfo9Sy5Xt+/cwDHnXjWnFWgnx1hXerbXoimU5Hh2Zb+vcv+vbnSK+GG
-zinXe0AU19HAJhdXpHN7F7NS8vhMBRUPisQooGcUFqWy6Zz+ts+diGlF4wkA8cJM
-8JoaPRu33ERVWkERNL7Ovo14sbFhx3sEoN73gNGIP5N3O8Yj1vCDdtuK3a9SiRo=
-=tzS2
+iQEcBAABAgAGBQJTmikWAAoJEJEOHi8Q7zzzxA0IAMCF9stRdWM1dSg8PAjBjdxM
+EZqCcycE4gUWWzP/fm7uUSsrMiMfsiN5S1kEsX6iq9ExBXfImCSaK3gDcXzwccmt
+OKzli46ML11B6kJAqvLqYhUaK4eB5g6cJo1Ol1fUKbGFrXbGWYME3wFB/sCCVTnP
+bGfoTRjL4L4pEEqA3+etNXvjwbQLct4l3sR5ownBQPYyQvxPepzTnusaf6SkcLGC
+6u7flxTLuu9VVrLT4yL1LtWSjDcNbl9do7eGAFiD7c5ImIbvwZXlPl7kVBOOqTnf
+qUZUK4v1ATutdY9koA0vwniP4HkAjqMHeo0bdwTeXXg8yeH21+JPfxkqW6qunB4=
+=cmN3
 -----END PGP SIGNATURE-----
 
 ```
@@ -24,12 +24,12 @@ zinXe0AU19HAJhdXpHN7F7NS8vhMBRUPisQooGcUFqWy6Zz+ts+diGlF4wkA8cJM
 size   exec  file                                  contents                                                        
              ./                                                                                                    
 50             .gitignore                          15518c53e314172f50549b4a29fde9086008f784effc1a2e65b38f09fb1a1403
-69             .travis.yml                         ab6c157084e6355fc20a86603565ee5fcb9bd8de7cc93dd477ca7e33b60204a1
-6323   x       Gruntfile.js                        4a9ec6d5861604f55112ac3f49b6b7e49f4cd990eb119c26a3f0b3827e9c7bf5
+156            .travis.yml                         2a87273f7b9ada9912539b7bf585aa135c065d5042a64077d9cff9194e9060d8
+6256   x       Gruntfile.js                        b80b421ec6496375d35ef6d806769df57455a99e5ba02e5fbcfc950493bd7568
 1080           LICENSE                             cfec6a6c39832bb228b8f4622aefb14f08d3c0f02823238c7143c668c3acd898
 9120           README.md                           5d6eb26cf43165f6a24259d324320ab8ca3e779ff15d95a566c0860b15813789
 794            bower.json                          db7df6532e696e543e2986950b09d1d92f17cad701df0245f045cf1e7b6adedb
-1402           check-type.min.js                   ab0e04de7eea212543b3fd4296b9f333dd977af2e7f440df80c3677947e80674
+1402           check-type.min.js                   bb2e4091c37078fa992822278d6d79367682cd4610928f0a8c8a2bb1d3038b23
 585            component.json                      773a3a0e0df903b9751d3beb3922b3fa4b0b85350bfdee0c1593f63b68f6552b
                lib/                                                                                                
 6687             check-type.js                     eb4217c6a5116d024b43248b2fd679ff973eb8272ec827c274a6ec81c4b0ba84
@@ -56,7 +56,7 @@ size   exec  file                                  contents
 325                  has_attribute_fixture.js      b75e70ef3d253e230c176b193ea44f8eac06ffe41f788b93243fe3fb6fa503f0
 408                  has_property_fixture.js       fd07814084af0eff5535b2d1410f40949cbdf8f411464904a39d36d19dc31e27
 267                  matches_structure_fixture.js  181053a1ce4d5b3947b7a18008313a815e9deeae9e05a5a31dce106bae788e10
-1338           package.json                        71a4956f10af7c905d2b4cb62d4edbae02d1c359db41dd8f001262fb9cd08a4a
+1147           package.json                        a4b7e55fa5974e400f3dc2e954d0acdfb036fdce5f49a3529e4951558e9ac896
 ```
 
 #### Ignore

@@ -142,12 +142,10 @@ module.exports = function(grunt) {
                 "author",
                 "bugs",
                 "contributors",
-                // "dependencies",
                 "homepage",
                 "keywords",
                 "license",
                 "main"
-                // "repository"
             ]
         }
     };
