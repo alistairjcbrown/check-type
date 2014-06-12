@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTmikWAAoJEJEOHi8Q7zzzxA0IAMCF9stRdWM1dSg8PAjBjdxM
-EZqCcycE4gUWWzP/fm7uUSsrMiMfsiN5S1kEsX6iq9ExBXfImCSaK3gDcXzwccmt
-OKzli46ML11B6kJAqvLqYhUaK4eB5g6cJo1Ol1fUKbGFrXbGWYME3wFB/sCCVTnP
-bGfoTRjL4L4pEEqA3+etNXvjwbQLct4l3sR5ownBQPYyQvxPepzTnusaf6SkcLGC
-6u7flxTLuu9VVrLT4yL1LtWSjDcNbl9do7eGAFiD7c5ImIbvwZXlPl7kVBOOqTnf
-qUZUK4v1ATutdY9koA0vwniP4HkAjqMHeo0bdwTeXXg8yeH21+JPfxkqW6qunB4=
-=cmN3
+iQEcBAABAgAGBQJTmistAAoJEJEOHi8Q7zzz23kH/2VZ85vINQICUx5jAb8FQ2Dt
+maxzSUwdckXSlyGTkCANpLKGKuiMwBBp6hHGLwQZbmuUWh4y1LVWZac+EjJQo63q
+ZM/IuhXcuy+y2XUPSG+wnMrTwlREOaGWjZcQdCQeVmCoA2/SLBamLcN9I/3dZv7S
+L2DDJxedeVimoT2oa1nux79IAhSqO+qfX5HlYzscGG6UI7wqdlEwZ0a+bE+JfMlm
+z9ngDe35qUoeXHJ5gklAqMWJeF/QqSWKtVa67T8VE/nuDhHZ/7wFiTSxQ2rVo7Ae
+b98nP5QZ9F1/Kq3O/Q/kGluNBMVR10wgjxOjUENquH2ROA8par+L0Q1/04U8FKQ=
+=OKBo
 -----END PGP SIGNATURE-----
 
 ```
@@ -28,9 +28,9 @@ size   exec  file                                  contents
 6256   x       Gruntfile.js                        b80b421ec6496375d35ef6d806769df57455a99e5ba02e5fbcfc950493bd7568
 1080           LICENSE                             cfec6a6c39832bb228b8f4622aefb14f08d3c0f02823238c7143c668c3acd898
 9120           README.md                           5d6eb26cf43165f6a24259d324320ab8ca3e779ff15d95a566c0860b15813789
-794            bower.json                          db7df6532e696e543e2986950b09d1d92f17cad701df0245f045cf1e7b6adedb
-1402           check-type.min.js                   bb2e4091c37078fa992822278d6d79367682cd4610928f0a8c8a2bb1d3038b23
-585            component.json                      773a3a0e0df903b9751d3beb3922b3fa4b0b85350bfdee0c1593f63b68f6552b
+795            bower.json                          51b8b0524f552a9bf651c8fdcc9d8a03caac87b1449ef876a1ba1e5bed94ca64
+1403           check-type.min.js                   baffb2a95409af6105df0a09a1d5df777f9b9145507dfd57a5b5ea65ce85ff19
+586            component.json                      7eeb8bc1c541ef1f699ebc0c5159d34b0d7fb558b03f1b5a13e98d9bdfca80c6
                lib/                                                                                                
 6687             check-type.js                     eb4217c6a5116d024b43248b2fd679ff973eb8272ec827c274a6ec81c4b0ba84
                  examples/                                                                                         
@@ -56,7 +56,7 @@ size   exec  file                                  contents
 325                  has_attribute_fixture.js      b75e70ef3d253e230c176b193ea44f8eac06ffe41f788b93243fe3fb6fa503f0
 408                  has_property_fixture.js       fd07814084af0eff5535b2d1410f40949cbdf8f411464904a39d36d19dc31e27
 267                  matches_structure_fixture.js  181053a1ce4d5b3947b7a18008313a815e9deeae9e05a5a31dce106bae788e10
-1147           package.json                        a4b7e55fa5974e400f3dc2e954d0acdfb036fdce5f49a3529e4951558e9ac896
+1148           package.json                        83618e1958e50e5e13dacb9d694c1461a3e17ac4acf244c3fde45bcda79139b2
 ```
 
 #### Ignore
