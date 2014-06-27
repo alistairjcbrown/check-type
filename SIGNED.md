@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTrf3aAAoJEJEOHi8Q7zzz8kQH/2gXnnQkot6AFcQEptSLcYER
-xruAOARBju7JZ1X9WyV0c5m9nWCc8h1KM9Ziw6RhmVkfUr4OY2e9K19nQcvc38Ms
-diRD17CJTDeQQcBueraCl4qzFIzYPRRM10UkBaQruQptbGtjuNZYGw0TkvqpxCpJ
-VI4hIjMqvtFh0mJ/Sq1/ZMC5oqAKJwvHMkgacmJB4wDd6JKz59s5oyk96z4WEcPd
-WUPjR985goiSbic5Q6ELy3/ZDs7FXqEt0XB4ZAeubai7F8yH9QANFrXAEdyPipS0
-GnXEOXECOlzmgs38TuAEI9m5LsWvDbAo6Kkxm4jb7HEcp2ozNZZt1O5b8m6qD2s=
-=/Tb8
+iQEcBAABAgAGBQJTrf6ZAAoJEJEOHi8Q7zzz5lAH/AzOpyyPuUGbAeu/18WrUfqS
+hFxJmrtR37UfHHRHTDoUykZ6kYtNAJiWGWqRO7UtwqdsBn2HTlI1Nz5yrWeqfX4m
+F4QhY1yUSrVf5EpQubOLJLpqEldbEwL1iasNJlvy8+rHAz5PvglPPjrSjXM9lKvw
+zw+gmSmZVz/QZ0+SB6xjQd7cbVW7r4yNYf5ank9N3+omGL6ba8KZQoIeoDb3X3GD
+4AK/Dtu7bObBAWULQXvGevLdW9dsN8xf5tK4vjbr54xrqovr2rO6k8namxqfyqSw
+rkx9ZYzMT1r9yS3G9ephwK12Ghhi9wcS6dwt2GXgKnnZz3HPXu8PxrtEdfeP4do=
+=5Z3u
 -----END PGP SIGNATURE-----
 
 ```
@@ -56,7 +56,7 @@ size   exec  file                                  contents
 325                  has_attribute_fixture.js      b75e70ef3d253e230c176b193ea44f8eac06ffe41f788b93243fe3fb6fa503f0
 408                  has_property_fixture.js       fd07814084af0eff5535b2d1410f40949cbdf8f411464904a39d36d19dc31e27
 267                  matches_structure_fixture.js  181053a1ce4d5b3947b7a18008313a815e9deeae9e05a5a31dce106bae788e10
-1158           package.json                        695b9ca3eddfcfd52ad99981d6269c5a75e3377602f14d6d46536ab750dbbc5a
+1158           package.json                        0406cdf2a907fb491a6539588c295deb33b3333cf6d97dafeb50c97da3635bc1
 ```
 
 #### Ignore
