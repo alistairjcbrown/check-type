@@ -30,8 +30,8 @@ module.exports = function(grunt) {
 
         return base;
     },
-    jshint, mocha_nodejs, mocha_browser, mocha_tasks,
-    check_meta, sync_meta, generate_toc, uglify;
+    jshint, mocha_nodejs, mocha_browser, test_tasks,
+    check_meta, sync_meta, generate_toc, uglify, keybase_dir;
 
     // ------
 
@@ -181,6 +181,11 @@ module.exports = function(grunt) {
         }
     };
 
+    keybase_dir = {
+        verify: {},
+        sign: {}
+    };
+
     grunt.initConfig({
         "pkg":          grunt.file.readJSON("package.json"),
         "jshint":       jshint,
@@ -189,38 +194,29 @@ module.exports = function(grunt) {
         "nice-package": check_meta,
         "update_json":  sync_meta,
         "toc":          generate_toc,
-        "uglify":       uglify
+        "uglify":       uglify,
+        "keybase_dir":  keybase_dir
     });
 
     // Load Tasks
     require("load-grunt-tasks")(grunt);
 
     // Allow flag after test
-    mocha_tasks = [ "mochaTest", "mocha" ];
+    test_tasks = [ "mochaTest", "mocha" ];
     if (process.argv[2] === "test") {
         if (grunt.option("nodejs")) {
-            mocha_tasks = [ mocha_tasks[0] ];
+            test_tasks = [ test_tasks[0] ];
         } else if (grunt.option("browser")) {
-            mocha_tasks = [ mocha_tasks[1] ];
+            test_tasks = [ test_tasks[1] ];
         }
     }
 
-    grunt.registerTask("keybase-sign-dir", "Run keybase directory sign", function() {
-        var shell = require("shelljs"),
-            command = "keybase dir sign", response;
-
-        response = shell.exec(command);
-        if (response.code !== 0) {
-            grunt.warn("Code signing failed");
-            return;
-        }
-    });
-
     // Define tasks
     grunt.registerTask("lint",    [ "jshint" ]);
-    grunt.registerTask("test",      mocha_tasks );
-    grunt.registerTask("go",      [ "lint", "test" ]);
-    grunt.registerTask("build",   [ "lint", "nice-package", "update_json", "uglify", "test", "toc", "keybase-sign-dir" ]);
+    grunt.registerTask("verify",  [ "keybase_dir:verify" ]);
+    grunt.registerTask("test",      test_tasks);
+    grunt.registerTask("go",      [ "lint", "verify", "test" ]);
+    grunt.registerTask("build",   [ "lint", "nice-package", "update_json", "uglify", "test", "toc", "keybase_dir:sign" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };
