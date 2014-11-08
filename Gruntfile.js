@@ -30,8 +30,9 @@ module.exports = function(grunt) {
 
         return base;
     },
-    jshint, mocha_nodejs, mocha_browser, test_tasks,
-    check_meta, sync_meta, generate_toc, uglify, keybase_dir;
+    jshint, mocha_nodejs, mocha_browser, test_tasks, check_meta,
+    bower_json, component_json, sync_meta, generate_toc, uglify,
+    keybase_dir;
 
     // ------
 
@@ -113,40 +114,72 @@ module.exports = function(grunt) {
     };
 
     // Sync all shared properties between meta files
+    bower_json = {
+        devDependencies: function(src) {
+            var dev = src.devDependencies;
+            return {
+                "chai": dev.chai,
+                "mocha": dev.mocha,
+                "sinon": "http://sinonjs.org/releases/sinon-"+dev.sinon+".js",
+                "sinon-chai": dev["sinon-chai"]
+            };
+        },
+        ignore: function() {
+            return [ "./Gruntfile.js", "./lib/examples/", "./lib/tests/" ];
+        }
+    };
+    component_json = {
+        dependencies: function(src) {
+            return {
+                "jashkenas/underscore": src.dependencies.underscore
+            };
+        },
+        repo: function(src) {
+            return src.repository.url.match(/([^\/]+\/[^\/]+).git/)[1];
+        }
+    };
+
     sync_meta = {
-        bower: {
+        options: {
             src: "package.json",
+            indent: "  "
+        },
+        bower: {
             dest: "bower.json",
-            fields: [
-                "name",
-                "description",
-                "version",
-                "author",
-                "bugs",
-                "contributors",
-                "dependencies",
-                "homepage",
-                "keywords",
-                "license",
-                "main",
-                "repository"
-            ]
+            fields: {
+                "name":            null,
+                "description":     null,
+                "version":         null,
+                "author":          null,
+                "bugs":            null,
+                "contributors":    null,
+                "dependencies":    null,
+                "devDependencies": bower_json.devDependencies,
+                "homepage":        null,
+                "keywords":        null,
+                "license":         null,
+                "main":            null,
+                "repository":      null,
+                "ignore":          bower_json.ignore
+            }
         },
         component: {
-            src: "package.json",
             dest: "component.json",
-            fields: [
-                "name",
-                "description",
-                "version",
-                "author",
-                "bugs",
-                "contributors",
-                "homepage",
-                "keywords",
-                "license",
-                "main"
-            ]
+            fields: {
+                "name":         null,
+                "description":  null,
+                "version":      null,
+                "author":       null,
+                "bugs":         null,
+                "contributors": null,
+                "dependencies": component_json.dependencies,
+                "homepage":     null,
+                "keywords":     null,
+                "license":      null,
+                "main":         null,
+                "repo":         component_json.repo,
+                "scripts":      [ "main" ]
+            }
         }
     };
 
