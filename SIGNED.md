@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJUX1kpAAoJEJEOHi8Q7zzzWbUH/3EBG44dCRFdgIKhYRJwq7ID
-vEZ9KwcGnBJc9RSuhmxhjXToDouRb4DJ68zbHJSQCZWF6wDuByFkpqCO72u6YxB1
-q1ZHZfh2m3xoMQBfw9V9pMdm9ws8iagqVs/GL0g8HGz6M8wC/dHS96p1KcbFrr4J
-lI0Uqx9uiS1LsCFFuRSEaQm5MaMGBuNdAmVj9Mh06W7TF80iLHxQlGgnqVy4DiS5
-412i7DzJ06UPcmFoRzk0zPRq30ayHv1OErNw+qmc1q2hVgSWxAEONquZ8dS1zWVV
-XcJiDDoO/k6y2D6wt9hnSz342YXXrsbMt3lyaTrJagLA86WhUf9KQc3X+bbq8gI=
-=JGyo
+iQEcBAABAgAGBQJUX2O2AAoJEJEOHi8Q7zzzjpcH/1XbbJ//BmYXM8OxOhHVCFJZ
+ZceeGWjFU4WP57Lon3pnZaTUb8UIuzO3oEUnpVWujCwlmNRT2Qrqe7fgcwnMFVVR
+0VM4+1JWOdBOjw2PbdpviuAKKXTHtvAaxJ8Oqi3PurlM2oZ0hKMZRGQTwtitPjVS
+s5grUA3+DYT9IbT4RlpmYgC3uc4KX+nLzu4tj4asSdu+RbaSMakOP0yYj/v33zt2
+l8QpWS0J3I/8GoMerxhX8i8liKKapA8cDXsoqgsMlpctkdhHEXVyxCtXrTMimTQJ
+OD28U8JlvNcZJVIFshWXgK4mB1dv6MOFk+isNjD0MJgVL3rsoxS3CI1HomgC0NQ=
+=jDYk
 -----END PGP SIGNATURE-----
 
 ```
@@ -29,10 +29,10 @@ size   exec  file                                             contents
 1080           LICENSE                                        cfec6a6c39832bb228b8f4622aefb14f08d3c0f02823238c7143c668c3acd898
 9120           README.md                                      5d6eb26cf43165f6a24259d324320ab8ca3e779ff15d95a566c0860b15813789
 870            bower.json                                     6a6782c62afccb7f3bcac7f567ff117b32f1aaef51abc06aa26597d2c7176483
-1641           check-type.min.js                              1753ebe477856cc651663d4eaef943c126df5e745bd3c1c7c59d74129824b4e7
+1774           check-type.min.js                              76685ea125ebe099df710c1cbd8abd6df1a10090f663f9e87348db5ac5abd1d7
 621            component.json                                 1a68e96ba96dbd87ff401c99809cdbaabfb6c475817cd54b820e6257a0a6da34
                lib/                                                                                                           
-7901             check-type.js                                5452ba59a17c65a691ed0cc522ff123e9b39f8a46e1669938e9929db6224451e
+9094             check-type.js                                28412f1b74a6c722b61f28e222e53c2d6b5a53be27fabb99701d739c745d2cd7
                  examples/                                                                                                    
                    browser/                                                                                                   
 678                  app.js                                   28309b9285a84efb6eb52e2bb664e04abcb6afa0f6ac12e26d42b765ea505d67
@@ -51,7 +51,7 @@ size   exec  file                                             contents
 307                    package.json                           a1ce41dca36d01b12b8cd4dc9b050a0b0775d45f2bd5abfcee43d87d0a20aecf
                  tests/                                                                                                       
 1801               check-type.test.html                       5d31ff834eb804d7e42435c1fd041e0f5f385887ac36bf8d4e927c9f7236a805
-20577  x           check-type.test.js                         001b75b6abc79908b916258a7a9e916fefe0a6ee9247640aeb5a8628e9f431cd
+21127  x           check-type.test.js                         67441600a8263f4fa5c7da149f8dae1adc64ccb6122bd1e6a2280394edf396d1
                    fixtures/                                                                                                  
 330                  has_attribute_fixture.js                 7f2a4fa0c86e400cec060caeea5ba592617f7b8d70732f61925d4ddbb4d1743d
 501                  has_attribute_with_backslash_fixture.js  71d13468934cc1a81faf781de72c03c0c550c8c599be927a52f18856f779249a
