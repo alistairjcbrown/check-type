@@ -1,15 +1,16 @@
 ##### Signed by https://keybase.io/alistairjcbrown
 ```
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.14 (GNU/Linux)
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABAgAGBQJUX2O2AAoJEJEOHi8Q7zzzjpcH/1XbbJ//BmYXM8OxOhHVCFJZ
-ZceeGWjFU4WP57Lon3pnZaTUb8UIuzO3oEUnpVWujCwlmNRT2Qrqe7fgcwnMFVVR
-0VM4+1JWOdBOjw2PbdpviuAKKXTHtvAaxJ8Oqi3PurlM2oZ0hKMZRGQTwtitPjVS
-s5grUA3+DYT9IbT4RlpmYgC3uc4KX+nLzu4tj4asSdu+RbaSMakOP0yYj/v33zt2
-l8QpWS0J3I/8GoMerxhX8i8liKKapA8cDXsoqgsMlpctkdhHEXVyxCtXrTMimTQJ
-OD28U8JlvNcZJVIFshWXgK4mB1dv6MOFk+isNjD0MJgVL3rsoxS3CI1HomgC0NQ=
-=jDYk
+iQEcBAABCgAGBQJUpp0yAAoJEJEOHi8Q7zzzx3UIANV05b45VkcvXNVzDOE4MY5t
+Q1c2hCN5VFDB8Hm1jE0af6p3veiYo7t6CWJJsVYkE0O2V9en9q2jAf/Q0BfhgIoy
+SyMKVETJ+DIH8JOCyMGrNchWUE1GPEUvtgQT9btThMS25693scDy/J41lcd194ti
+MdWQR/4SWYzEpCztE9CZCD71TIbQeZHQkXXNQEf+oCnELbCgS6FW7D7QVmgEMRKh
+x0NetScVM2Mmqx5PFaNgYkmtgcidb9ScbF4fdWVBTTMvaKAdtizwusvT2ULe26u1
+2mcD676+Sd0lTblt/ETVjKJpYw7YzfHaxj9tQdi6RDvk4N1DhyQsrvwxjnpruTc=
+=mcfn
 -----END PGP SIGNATURE-----
 
 ```
@@ -29,7 +30,7 @@ size   exec  file                                             contents
 1080           LICENSE                                        cfec6a6c39832bb228b8f4622aefb14f08d3c0f02823238c7143c668c3acd898
 9120           README.md                                      5d6eb26cf43165f6a24259d324320ab8ca3e779ff15d95a566c0860b15813789
 870            bower.json                                     6a6782c62afccb7f3bcac7f567ff117b32f1aaef51abc06aa26597d2c7176483
-1774           check-type.min.js                              76685ea125ebe099df710c1cbd8abd6df1a10090f663f9e87348db5ac5abd1d7
+1774           check-type.min.js                              d7bebb8a2b99406d6cfd0ebd6036579aa64be5cf27d4705279f1d001fdeab788
 621            component.json                                 1a68e96ba96dbd87ff401c99809cdbaabfb6c475817cd54b820e6257a0a6da34
                lib/                                                                                                           
 9094             check-type.js                                28412f1b74a6c722b61f28e222e53c2d6b5a53be27fabb99701d739c745d2cd7
@@ -37,7 +38,7 @@ size   exec  file                                             contents
                    browser/                                                                                                   
 678                  app.js                                   28309b9285a84efb6eb52e2bb664e04abcb6afa0f6ac12e26d42b765ea505d67
 266                  bower.json                               6387e55105b163c0c2e2a60d854ede62f2f57c21eccff637faa8dcc8d5e9b840
-669                  index.html                               823717c6c8312f2c9353a7aa2a1fe1da8fa544dc0e445688fdfd35f07401a632
+650                  index.html                               bfdd174fa64063966e9221694e3d0c70a6a1de7ec196b1d99da87cb50d849fd5
                    nodejs/                                                                                                    
 262                  app.js                                   c499853e75d24fb156e39312063067b985ac18a7c97d3f927de727c3827bf19f
 256                  package.json                             f97cdb867a0e853a9b6c1aa0c6e0be0ed1b660d1c0d2ba137cb5113ab04060e8
@@ -45,7 +46,7 @@ size   exec  file                                             contents
                      browser/                                                                                                 
 767                    app.js                                 1a28dfe5b2928b64346cb7d1da863bef614e8d22ae0bb6007edc98319f78b96e
 314                    bower.json                             8bab89521cee02384c16af8943c3fb7a4763c1c6d37a5083e2e6ccc098118d94
-821                    index.html                             8762f6453ba7d16da94ca6c32b2ee5456a76fdae822635a46728d5ec2aec89ce
+842                    index.html                             b5914798643ba752d0a98daeed0298aa933ae6893721f7719cd204d988c164c4
                      nodejs/                                                                                                  
 468                    app.js                                 bedbfea8b04db7526ac28c39f4a12b9d1737dd2eff9a9ba400569eed7c2414bf
 307                    package.json                           a1ce41dca36d01b12b8cd4dc9b050a0b0775d45f2bd5abfcee43d87d0a20aecf
