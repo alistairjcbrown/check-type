@@ -140,7 +140,7 @@ define([ "check-type" ], function(check) {
 
 ## Testing
 
-Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](http://www.jshint.com/about/) and [Mocha](http://visionmedia.github.io/mocha/).
+Built in tests and linting using [Grunt](http://gruntjs.com/) to call [JSHint](http://www.jshint.com/about/) and [Mocha](http://mochajs.org/).
 
 Get all of the developer dependecies by running:
 
